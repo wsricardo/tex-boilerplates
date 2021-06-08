@@ -1,0 +1,7 @@
+\babel@toc {portuguese}{}
+\contentsline {section}{\numberline {1}title}{0}% 
+\contentsline {subsection}{\numberline {1.1}subtitle1}{0}% 
+\contentsline {subsection}{\numberline {1.2}subtitle2}{0}% 
+\contentsline {section}{\numberline {2}title2}{1}% 
+\contentsline {subsection}{\numberline {2.1}subtitle1}{1}% 
+\contentsline {subsection}{\numberline {2.2}subtitle}{1}% 
