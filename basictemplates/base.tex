@@ -1,0 +1,55 @@
+% -------------------------------------
+% Templates
+% Blog: https://wsricardo.blogspot.com
+% https://github.com/mkvincis
+% -------------------------------------
+% Base for documents
+\documentclass[a4,10pt]{article}
+\usepackage[portuguese]{babel} % Your language for document
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc} % Complex characters
+\usepackage[T1]{fontenc}
+
+% Create Graphics and insert figure/images
+\usepackage{graphicx}
+\usepackage{tikz}
+% ----------------------------------------
+
+% AMS Resources Writer 
+\usepackage{amsmath,amsfonts}
+% ---------------------
+
+% Commands and environments
+%
+% Command to insert blank page.
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+
+% ------------------------
+
+% Title of article
+\title{My Article}
+% Author name of this article
+\author{My Name}
+\makeindex % Insert indexof content
+
+\begin{document}
+\maketitle % Insert title
+\blankpage % Insert blank page
+\tableofcontents % Insert table contents
+\blankpage
+
+
+% Sections and subsections
+\section{title}
+\subsection{subtitle1}
+\subsection{subtitle2}
+\blankpage
+\section{title2}
+\subsection{subtitle1}
+\subsection{subtitle}
+
+\end{document}
