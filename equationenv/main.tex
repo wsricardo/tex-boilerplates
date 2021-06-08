@@ -1,0 +1,28 @@
+% -------------------------------------
+% Templates
+% Blog: https://wsricardo.blogspot.com
+% https://github.com/mkvincis
+% -------------------------------------
+% Base for documents
+\documentclass[a4,10pt]{article} % Type document (book, article, paper,)
+\usepackage[portuguese]{babel} % Your language for document
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc} % Complex characters
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+
+\newtheorem{example}{Exemplo}
+
+\begin{document}
+	\begin{example}
+		$	f(x) = \alpha x, \; \alpha \; \in \; \mathbb{R}$	
+	\end{example}
+	\begin{multline*}
+	\begin{split}
+	f^{-1}(x) = \frac{x}{\alpha} &\Rightarrow M_f(x_1, x_2) = f^{-1} \left( \frac{f(x_1) + f(x_2)}{2} \right)\\
+	&\Rightarrow M_f(x_1, x_2) = f^{-1} \left( \frac{\alpha x_1 + \alpha x_2}{2} \right) \\
+	&\boxed{M_f(x_1, x_2) = \frac{x_1 + x_2}{2}}, \; \text{Média Aritmética.}
+	\end{split}
+	\end{multline*}
+	
+\end{document}
