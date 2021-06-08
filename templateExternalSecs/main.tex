@@ -19,6 +19,9 @@
 \usepackage{amsmath,amsfonts}
 % ---------------------
 
+\usepackage{afterpage}
+
+
 % Commands and environments
 %
 % Command to insert blank page.
@@ -35,22 +38,18 @@
 \title{My Article}
 % Author name of this article
 \author{My Name}
-\makeindex % Insert indexof content
 
 \begin{document}
-\maketitle % Insert title
+%\maketitle % Insert title
+\maketitle{\thispagestyle{empty}\null}
 \blankpage % Insert blank page
 \tableofcontents % Insert table contents
 \blankpage
 
 
 % Sections and subsections
-\section{title}
-\subsection{subtitle1}
-\subsection{subtitle2}
-\blankpage
-\section{title2}
-\subsection{subtitle1}
-\subsection{subtitle}
+\include{sec1} % File: sec1.tex
+\include{sec2} % File: sec2.tex
+% ...
 
 \end{document}
