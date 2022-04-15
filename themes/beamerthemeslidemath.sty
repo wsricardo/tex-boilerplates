@@ -7,7 +7,8 @@
 % Settings
 %\useinnertheme{texsx}
 %\useoutertheme{texsx}
-%\usecolortheme{texsx}  
+%\usecolortheme{texsx} 
+%\useoutertheme{infolines}
 % Settings
 \setbeamersize{text margin left=4mm,text margin right=4mm} 
 
@@ -62,29 +63,30 @@
 
 %%% Footnote with info like title, author slide number.
 %%% Bugs in this parts.
-%\defbeamertemplate*{footline}{slidemath}[1][]{
-%	\begin{beamercolorbox}[wd=6cm, leftskip=12cm, #1]{title page header}
-%		\usebeamerfont{footline}%
-%		\usebeamercolor[fg]{footline}%
-%		\tiny \textbf{\insertframenumber/\inserttotalframenumber}\par%
-%		\vspace{-6pt}
-%	\end{beamercolorbox}
-%	
-%	\begin{beamercolorbox}[wd=4cm, leftskip=1cm, #1]{title page header}
-%		\usebeamerfont{footline}%
-%		\usebeamercolor[fg]{footline}%
-%		\insertauthor\par%
-%		\vspace{-3pt}
-%	\end{beamercolorbox}
-%	
-%	\begin{beamercolorbox}[wd=12cm, leftskip=6cm, #1] {title page header}
-%		\usebeamerfont{footline}%
-%		\usebeamercolor[fg]{footline}%
-%		\inserttitle\par%
-%		\vspace{2pt}
-%	\end{beamercolorbox}
-%	
-%}
+\defbeamertemplate*{footline}{slidemath}[1][]{
+	\ifnum\thepage>1\relax%
+	\vspace{-2pt}%
+	\hspace{2pt}%
+	\begin{beamercolorbox}[wd=1cm, leftskip=12cm, #1]{title page header}
+		\usebeamerfont{footline}%
+		\usebeamercolor[fg]{footline}%
+		\insertframenumber/\inserttotalframenumber %
+	\end{beamercolorbox}
+	\hspace{-18pt}%
+	\begin{beamercolorbox}[wd=5cm, leftskip=.01cm, #1]{title page header}
+		\usebeamerfont{footline}%
+		\usebeamercolor[fg]{footline}%
+		\insertauthor\par%
+	\end{beamercolorbox}
+	\hspace{2pt}%
+	\begin{beamercolorbox}[wd=8cm, leftskip=.01cm, #1] {title page header}
+		\usebeamerfont{footline}%
+		\usebeamercolor[fg]{footline}%
+		\inserttitle\par%
+	\end{beamercolorbox}
+	\hspace{2pt}%
+	\fi
+}
 %%%
 
 \defbeamertemplate*{page}{slidemath}{
