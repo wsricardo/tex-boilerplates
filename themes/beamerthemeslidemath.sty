@@ -33,28 +33,15 @@
 \setbeamertemplate{frametitle}{8pt}
 \setbeamertemplate{frametitle}
 {
-		\vspace{-6.8pt}
-		%\color{blue!90!cyan!70}
-		\color{white}
-		\insertframetitle%
-		\par
+	\vspace{-6.8pt}
+	%\color{blue!90!cyan!70}
+	\color{white}
+	\insertframetitle%
+	\par
 }
-\setbeamercolor{footline}{fg=blue}
-\setbeamerfont{footline}{series=\bfseries}
+\setbeamercolor{footline}{fg=white}
+%\setbeamerfont{footline}{series=\bfseries}
 
-%\setbeamertemplate{footline}{
-%	\begin{tikzpicture}
-%		\fill[color=blue!90!cyan!70] (0, 0) rectangle (\the\paperwidth, 0.2);
-%	\end{tikzpicture}
-%}
-
-
-
-%\setbeamertemplate{frame page}{
-%	\begin{tikzpicture}
-%		\fill[color=blue!90!cyan!70] (0, \the\paperheight - 25) rectangle (\the\paperwidth, \the\paperheight);
-%	\end{tikzpicture}
-%}
 
 \setbeamertemplate{background}{
 	\begin{tikzpicture}
@@ -63,26 +50,42 @@
 		\fill[color=orange!80!cyan!70] (0,0) rectangle(2.95,2.9);
 		\fill[color=blue!90!cyan!70] (3.05,0) rectangle(\the\paperwidth,2.9);
 		\ifnum\thepage>1\relax%
-			\fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+		\fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
 		\fi
 		
 		\ifnum\thepage>1\relax%
-				\fill[color=orange!80!cyan!70] (0,0 ) rectangle (\the\paperwidth, 0.32);
-				\fill[color=blue!90!cyan!70] (0,\the\paperheight - 28.8) rectangle (\the\paperwidth,\the\paperheight);
+		\fill[color=orange!80!cyan!70] (0,0 ) rectangle (\the\paperwidth, 0.32);
+		\fill[color=blue!90!cyan!70] (0,\the\paperheight - 28.8) rectangle (\the\paperwidth,\the\paperheight);
 		\fi
 	\end{tikzpicture}
 }
 
-\defbeamertemplate*{footline}{slidemath}[1][]{
-	\begin{beamercolorbox}[wd=12cm, leftskip=10cm, #1]{title page header}
-		\usebeamerfont{footline}%
-		\usebeamercolor[fg]{footline}%
-		\hspace{0.4em}%
-		\vspace{0.1em}%
-		\insertframenumber/\inserttotalframenumber\par%
-	\end{beamercolorbox}%
-
-}
+%%% Footnote with info like title, author slide number.
+%%% Bugs in this parts.
+%\defbeamertemplate*{footline}{slidemath}[1][]{
+%	\begin{beamercolorbox}[wd=6cm, leftskip=12cm, #1]{title page header}
+%		\usebeamerfont{footline}%
+%		\usebeamercolor[fg]{footline}%
+%		\tiny \textbf{\insertframenumber/\inserttotalframenumber}\par%
+%		\vspace{-6pt}
+%	\end{beamercolorbox}
+%	
+%	\begin{beamercolorbox}[wd=4cm, leftskip=1cm, #1]{title page header}
+%		\usebeamerfont{footline}%
+%		\usebeamercolor[fg]{footline}%
+%		\insertauthor\par%
+%		\vspace{-3pt}
+%	\end{beamercolorbox}
+%	
+%	\begin{beamercolorbox}[wd=12cm, leftskip=6cm, #1] {title page header}
+%		\usebeamerfont{footline}%
+%		\usebeamercolor[fg]{footline}%
+%		\inserttitle\par%
+%		\vspace{2pt}
+%	\end{beamercolorbox}
+%	
+%}
+%%%
 
 \defbeamertemplate*{page}{slidemath}{
 	\vspace{24pt}
