@@ -1,0 +1,114 @@
+% Own theme
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+
+% Settings
+%\useinnertheme{texsx}
+%\useoutertheme{texsx}
+%\usecolortheme{texsx}  
+% Settings
+\setbeamersize{text margin left=4mm,text margin right=4mm} 
+
+\setbeamercolor*{title page header}{fg=blue!90!cyan!70}
+\setbeamercolor*{author}{fg=white}
+\setbeamercolor*{date}{fg=white}
+\setbeamercolor*{institute}{fg=white}
+\setbeamercolor*{item}{fg=blue!90!cyan!70}
+%\setbeamercolor*{example}{fg=blue!90!cyan!70}
+\setbeamercolor*{block title example}{fg=white, bg=blue!90!cyan!70}
+% Items
+\setbeamertemplate{items}[square]
+%\setbeamertemplate{sections/subsections in toc}[square]
+
+% Examples
+\setbeamertemplate{example}[square]
+\setbeamertemplate{example}{bg=blue!90!cyan!70}
+
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true] 
+
+\setbeamertemplate{frametitle}{8pt}
+\setbeamertemplate{frametitle}
+{
+		\vspace{-6.8pt}
+		%\color{blue!90!cyan!70}
+		\color{white}
+		\insertframetitle%
+		\par
+}
+\setbeamercolor{footline}{fg=blue}
+\setbeamerfont{footline}{series=\bfseries}
+
+%\setbeamertemplate{footline}{
+%	\begin{tikzpicture}
+%		\fill[color=blue!90!cyan!70] (0, 0) rectangle (\the\paperwidth, 0.2);
+%	\end{tikzpicture}
+%}
+
+
+
+%\setbeamertemplate{frame page}{
+%	\begin{tikzpicture}
+%		\fill[color=blue!90!cyan!70] (0, \the\paperheight - 25) rectangle (\the\paperwidth, \the\paperheight);
+%	\end{tikzpicture}
+%}
+
+\setbeamertemplate{background}{
+	\begin{tikzpicture}
+		\useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+		\fill[color=blue!90!cyan!70] (0,\the\paperheight - 10) rectangle (\the\paperwidth,\the\paperheight);
+		\fill[color=orange!80!cyan!70] (0,0) rectangle(2.95,1.9);
+		\fill[color=blue!90!cyan!70] (3.05,0) rectangle(\the\paperwidth,1.9);
+		\ifnum\thepage>1\relax%
+			\fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+		\fi
+		
+		\ifnum\thepage>1\relax%
+				\fill[color=orange!80!cyan!70] (0,0 ) rectangle (\the\paperwidth, 0.32);
+				\fill[color=blue!90!cyan!70] (0,\the\paperheight - 28.8) rectangle (\the\paperwidth,\the\paperheight);
+		\fi
+	\end{tikzpicture}
+}
+
+\defbeamertemplate*{footline}{slidemath}[1][]{
+	\begin{beamercolorbox}[wd=12cm, leftskip=10cm, #1]{title page header}
+		\usebeamerfont{footline}%
+		\usebeamercolor[fg]{footline}%
+		\hspace{0.4em}%
+		\vspace{0.1em}%
+		\insertframenumber/\inserttotalframenumber\par%
+	\end{beamercolorbox}%
+
+}
+
+\defbeamertemplate*{page}{slidemath}{
+	\vspace{24pt}
+}
+% Title page
+\defbeamertemplate*{title page}{slidemath}[1][]
+{ 
+	\vskip2cm%
+	\begin{beamercolorbox}[wd=12cm, leftskip=3cm, #1]{title page header}
+		\usebeamerfont{title}\inserttitle\par%
+	\end{beamercolorbox}%
+	\vskip4cm%
+	\begin{beamercolorbox}[wd=12cm, leftskip=3cm, #1]{institute  }
+		\usebeamerfont{institute}\insertinstitute\par%
+	\end{beamercolorbox}
+	\vskip.1cm%
+	\begin{beamercolorbox}[wd=12cm,leftskip=3cm, #1]{author}
+		\usebeamerfont{author}\insertauthor%
+	\end{beamercolorbox}
+	\vskip.1cm%
+	\begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{date}
+		\usebeamerfont{author}\insertdate%
+	\end{beamercolorbox}
+	\vfill
+}
+
+
+
+\mode<all>
