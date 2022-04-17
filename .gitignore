@@ -1,7 +1,7 @@
 
-.nav
-.out
-.aux
-.snm
-.log
-.lyx~
+*.nav
+*.out
+*.aux
+*.snm
+*.log
+*.lyx~
