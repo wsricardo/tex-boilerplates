@@ -48,7 +48,9 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{blocks}[rounded][shadow=true] 
 
-\setbeamertemplate{frametitle}{8pt}
+%\setbeamertemplate{frametitle}{8pt}
+%\setbeamerfont{frametitle}{family=\rfamily, series=\bfseries, size={\fontsize{14}{18}}}
+\setbeamerfont{frametitle}{family=\rmfamily,series=\bfseries,size={\fontsize{14}{16}}}
 \setbeamertemplate{frametitle}
 {
 	\vspace{-2pt}
@@ -73,7 +75,7 @@
 		
 		\ifnum\thepage>1\relax%
 		\fill[color=orange!80!cyan!70] (0,0 ) rectangle (\the\paperwidth, 0.32);
-		\fill[color=blue!90!cyan!70] (0,\the\paperheight - 28.8) rectangle (\the\paperwidth,\the\paperheight);
+		\fill[color=blue!90!cyan!70] (0,\the\paperheight - 17) rectangle (\the\paperwidth,\the\paperheight);
 		\fi
 	\end{tikzpicture}
 }

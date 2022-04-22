@@ -181,9 +181,94 @@ Your proof
 \end_layout
 
 \begin_layout Theorem
+My theorem
+\end_layout
+
+\begin_layout Theorem
+
+\end_layout
+
+\begin_layout Theorem
 
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Slide 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+Insert new frame with 
+\begin_inset Quotes eld
+\end_inset
+
+Frame
+\begin_inset Quotes erd
+\end_inset
+
+ enviromment and 
+\begin_inset Quotes eld
+\end_inset
+
+Alt+P return
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Slide 5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
