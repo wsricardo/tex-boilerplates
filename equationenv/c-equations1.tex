@@ -1,0 +1,42 @@
+\documentclass[12pt]{beamer}
+%\usetheme{slidemath}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{calrsfs}
+\usepackage{calligra}
+\usepackage{calrsfs}
+\usepackage[mathscr]{euscript}
+%use graphics
+\usepackage{graphicx}
+\usepackage{tikz, tkz-base, tkz-fct}
+\usepackage{wrapfig}
+
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{adjustbox}
+
+\setbeamersize{text margin left=4mm,text margin right=4mm}
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+	\begin{frame}{Linear Transformations}
+		Technically, the definition of "linear" is as follow: A transformation $L$ is linear if it satisfies two properties:
+		
+		\begin{itemize}
+			\item $ L( \mathbf{v} + \mathbf{w} = L( \mathbf{v} )  + L( \mathbf{w} )) \qquad "Aditivity"$ 
+			\item $ L(c \mathbf{v} ) = cL( \mathbf{v} ) \qquad "Scalling" $
+		\end{itemize}
+		\vspace{12px}
+		
+		I'll talk about these properties later on, but I'm a big believer in first understanding things visually. Once you do, it becomes much more intuitive why these two properties make sense. So for now, you can feel fine thinking of linear transformations as those which keep grid lines parallel and evenly spaced (and which fix the origin in place), since this visual definition is actually equivalent to the two properties above.
+		\vspace{8px}
+		
+		\tiny \textit{Source: Youtube Channel \textbf{\href{https://www.youtube.com/watch?v=kYB8IZa5AuE}{3Blue1Brown}}, https://www.youtube.com/c/3blue1brown} 
+		
+	\end{frame}
+\end{document}
