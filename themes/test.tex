@@ -1,0 +1,46 @@
+\documentclass[a4paper, 14pt]{beamer}
+%\usepackage[options]{package}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{layout}
+\usepackage{geometry}
+\geometry{
+	papersize={19.5cm,8cm},
+ 	left=0.0001mm,
+ 	right=0.0001mm,
+ 	top=0.001mm,
+ 	bottom=0.001mm
+}
+
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+	
+
+
+\begin{frame}{}
+	\[
+	\begin{aligned}
+		\Gamma_{rtt} &= - \frac{\partial}{\partial_r} \ln \alpha \\
+		\Gamma_{rtr} &= - \beta_t \frac{\partial}{\partial_r} \ln \alpha + \frac{\partial \beta_t}{\partial_r} - \frac{\partial}{\partial_t} \ln \beta_r\\
+		\Gamma_{\theta t \theta} &= \Gamma_{\phi t \phi} = \frac{\beta_t}{r} \\
+		\Gamma_{\theta r \theta} &= \Gamma_{\phi r \phi} = \frac{\beta_r}{r} \\
+		\Gamma_{\phi \theta \phi} &= \frac{\cot \theta}{r}
+	\end{aligned}\qquad
+	\begin{aligned}
+		\qquad 1 - \frac{2M}{r} &= - \beta_t^{\, 2} + \beta_r^{\, 2} \\
+		\qquad \nabla_t \beta_t &= - \frac{M}{r^{\, 2}} - 4 \pi r p \\
+		\qquad \nabla_t \beta_r &= 4 \pi r f \\
+		\qquad \nabla_t &\rightarrow \text{covariant time derivative} \\
+		\qquad p &\rightarrow \text{radial pressure (not isotropic)} \\
+		\qquad f &\rightarrow \text{radial energy flux} \\
+		\qquad M &\rightarrow \text{Migner-Thorne-Sharp Mass}
+	\end{aligned}
+	\]
+\end{frame}
+\end{document}
